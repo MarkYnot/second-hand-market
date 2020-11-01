@@ -1,0 +1,379 @@
+/*公共样式*/
+*{
+    font-size: 14px;
+}
+/*public-header-top部分*/
+.index-public-container{
+    width: 1000px;
+    margin:auto;
+}
+.public-header-top{
+    height: 32px;
+    background: #f7f7f7;
+    /*单行文本行高等于元素高度，文本垂直居中*/
+    line-height: 32px;
+}
+.header-top-left{
+    float: left;
+}
+.header-top-left a{
+    font-size: 12px;
+    font-weight: bolder;
+}
+.header-top-right{
+    float: right;
+}
+/*五角星居中*/
+.collection{
+    background: url("../images/icon/wujiaoxing.jpg") left center no-repeat;
+    padding-left: 19px;
+}
+ 
+.index-public-header a:hover{
+    color: red;
+}
+/*public-header-bottom部分*/
+.public-header-bottom{
+    height: 86px;
+    background: #1d7ad9;
+}
+.header-bottom-logo{
+    padding-left: 40px;
+    padding-top: 18px;
+}
+.header-bottom-search{
+    width: 430px;
+    padding-top: 24px;
+    margin-left: 100px;
+}
+.header-bottom-search .search-text{
+    width:360px;
+    height: 36px;
+    /*css hack \9代表所有的ie浏览器*/
+    line-height: 36px\9;
+    padding: 0 5px;
+    border: none;
+}
+.header-bottom-search .search-btn{
+    width:70px;
+    height: 36px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    background: #ff8c00;
+    border: none;
+    margin-left: 0px;
+    color:#fff;
+}
+/*购物车*/
+.header-bottom-car{
+    width: 146px;
+    height: 35px;
+    background-color: #ff8c00;
+    margin-top: 24px;
+}
+.header-bottom-car .shopText{
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color:#fff;
+    width: 87px;
+    height: 100%;
+    border-right:1px solid #e27a00;
+    line-height: 35px;
+    background:url("../images/icon/shoppingcar.jpg") no-repeat 10px center;text-indent: 40px;
+}
+.header-bottom-car .shopNum{
+    width: 57px;
+    font-size: 14px;
+    color:#fff;
+    border-left:1px solid #ff9c01;
+    font-family: "Microsoft YaHei";
+    line-height: 35px;
+    background: url("../images/icon/jiantou.jpg") no-repeat 34px center;
+    text-indent: 20px
+}
+/*头部导航部分*/
+.public-header-nav{
+    height: 36px;
+    background: #1d7ad9;
+    color: #fff;
+}
+.public-header-nav .shop-class{
+    height: 36px;
+    width: 190px;   
+}
+.public-header-nav h3{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+}
+/*内嵌标签没有宽度与高度，要设置为行内块元素*/
+.public-header-nav .shop-class i{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background:  url("../images/icon/sanjiao.jpg") no-repeat left center;
+    overflow: hidden;
+    margin-left: 11px;
+}
+.public-header-nav nav{
+    display: block;
+    width: 100px;
+    text-align: center;
+    height: 36px;
+     
+}
+.public-header-nav .nav a{
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color:#fff;
+    display: inline-block;
+    height: 36px;
+    padding: 0 36px;
+    line-height: 36px;
+}
+.public-header-nav .nav li{
+    float: left;
+}
+.public-header-nav .nav .active{
+    background: #4593fd;
+}
+/*商品弹出列表*/
+.shop-class{
+    position: relative;
+}
+.shop-class-show{
+    position: absolute;left: 0;top: 36px;
+}
+.shop-class-show .class-show-item{
+    width: 190px;
+    height: 63px;
+    background: #4593fd;
+    padding:14px 10px;
+    border-bottom: 1px solid #3487f2;
+    border-top: 1px solid #5aa1fe;
+}
+.shop-class-show dt{
+    height: 22px;
+    background: url("../images/icon/sanjiao02.jpg") no-repeat right center;
+}
+.shop-class-show a{
+    margin-right: 8px;
+    display: inline-block;
+}
+.shop-class-show dt a{
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb( 255, 255, 255 );
+}
+.shop-class-show dd a{
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgb( 194, 217, 248 );
+}
+.shop-class-show .show-item-bg{
+    width:46px;
+    height:18px;
+    background: #106ac0;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: underline;
+}
+/*class-show-item active状态*/
+.shop-class-show .class-active{
+    background: #fff;
+    border-left: 1px solid #4593fd;
+}
+.shop-class-show .class-active a{
+    color: #000;
+}
+.shop-class-show .class-active .show-item-bg{
+    text-decoration: none;
+    color: #fff;
+}
+/*弹出的菜单*/
+.shop-class-list{
+    width: 570px;
+    position: absolute;left: 190px;top: 36px;
+    border:1px solid #dddddd;
+}
+.class-list-container{
+    padding: 5px 20px;
+}
+.shop-class-list dt dd{
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgb( 75, 136, 218 );
+}
+.class-list-item{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 0;
+}
+.shop-class-list dt{
+    font-weight: bolder;
+    height: 24px;
+    line-height: 24px;
+}
+.class-list-item dd{
+    padding-left: 68px;
+    margin-top: -24px;
+    line-height: 24px;
+}
+.class-list-item dd a{
+    margin-right: 14px;
+}
+.class-list-link a{
+    display: inline-block;
+    width: 105px;
+    height: 26px;
+    line-height: 26px;
+    background: #2785e6;
+    font-size: 12px;
+    font-family: "SimSun";
+    color: rgb( 255, 255, 255 );
+    padding: 0 8px;
+    margin-right: 10px;
+}
+.list-link-icon{
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background: url("../images/icon/sanjiao02.jpg") no-repeat left center;
+    margin-left: 7px;
+}
+.class-list-link{
+    padding: 15px 0;
+}
+/*banner部分*/
+.public-banner-bar img{
+    width: 240px;
+    height: 325px;
+    float: right;
+}
+/*菜单部分*/
+.public-menu-title{
+    height: 44px;
+    margin-bottom: 15px;
+    margin-top: 16px;
+}
+.public-menu-title h3{
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 0, 0, 0 );
+    float: left;
+    line-height: 44px;
+    margin-left: 14px;
+}
+.public-menu-title span{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background:url("../images/icon/juxing.jpg") left center no-repeat;
+    float: left;
+}
+.public-menu-title .more{
+    float: right;
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb( 0, 0, 0 );
+    font-weight: bolder;
+    margin-top: 28px;
+}
+/*商品菜单列表*/
+/*左侧*/
+.index-public-menu .public-menu-left{
+    width: 190px;
+    height: 400px;
+    float: left;
+}
+.index-public-menu .public-menu-right{
+    width: 810px;
+    height: 400px;
+    float: left;
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    border-bottom: 3px solid #ff7201;
+}
+/*右侧*/
+/*商品菜单列表-上部*/
+.menu-right-col{margin-right: -1px;}
+.index-public-menu .menu-right-top{
+    width: 203px;
+    height: 280px;
+    border-bottom:1px solid #e5e5e5;
+    border-right:1px solid #e5e5e5;
+    text-align: center;
+}
+.menu-right-top .right-top-img{
+    width: 203px;
+    height: 220px;
+    padding-top: 44px;
+}
+.right-top-img img{
+    width: 136px;
+    height: 156px;
+}
+.right-top-text{
+    width: 203px;
+    padding-bottom: 24px;
+}
+.index-public-menu .right-top-text h3{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 0, 0, 0 );
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.index-public-menu .right-top-text p{
+    color: #ff7300;
+}
+/*商品菜单列表-下部*/
+.index-public-menu .menu-right-bottom{
+    width: 203px;
+    height: 116px;
+    border-right: 1px solid #e5e5e5;
+}
+.menu-right-bottom .right-bottom-img{
+    width: 100px;
+    height: 116px;
+    text-align: center;
+    line-height: 116px;
+}
+.menu-right-bottom .right-bottom-text{
+    width: 99px;
+    height: 116px;
+}
+.menu-right-bottom .right-bottom-text p{
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb( 255, 115, 0 );
+    padding-top: 30px;
+}
+.menu-right-bottom .right-bottom-text h3{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 24, 24, 24 );
+    font-weight: bolder;
+}
+.index-public-footer{
+    width: 100%;
+    height: 224px;
+    background: #d4d4d4;
+    margin-top: 42px;
+    margin-bottom: 8px;
+    text-align: center;
+    padding-top: 52px;
+}
+.index-public-footer p{
+    font-size: 12px;
+    font-family: "NSimSun";
+    color: rgb( 0, 0, 0 );
+    font-weight: bolder;
+    line-height: 24px;
+}
+.index-public-footer a{
+    display: inline-block;
+    margin-right: 26px;
+}
+

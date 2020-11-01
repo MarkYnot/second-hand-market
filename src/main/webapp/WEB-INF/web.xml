@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+
+	version="2.5">
+	<display-name>second-hand</display-name>
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>cn.second_hand.user.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdatePictureServlet</servlet-name>
+		<servlet-class>cn.second_hand.product.servlet.UpdatePictureServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProductServlet</servlet-name>
+		<servlet-class>cn.second_hand.product.servlet.ProductServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SaleOrderServlet</servlet-name>
+		<servlet-class>cn.second_hand.product.servlet.SaleOrderServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OrderServlet</servlet-name>
+		<servlet-class>cn.second_hand.product.servlet.OrderServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>CartServlet</servlet-name>
+	<servlet-class>cn.second_hand.cart.servlet.CartServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description></description>
+		<servlet-name>ManagerServlet</servlet-name>
+		<servlet-class>cn.second_hand.manager.servlet.ManagerServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>PayServlet</servlet-name>
+	<servlet-class>cn.second_hand.cart.servlet.PayServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>PayServlet</servlet-name>
+	<url-pattern>/PayServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>CategoryServlet</servlet-name>
+	<servlet-class>cn.second_hand.category.servlet.CategoryServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>managerProductServlet</servlet-name>
+	<servlet-class>cn.second_hand.product.servlet.managerProductServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>managerProductServlet</servlet-name>
+	<url-pattern>/managerProductServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>CategoryServlet</servlet-name>
+	<url-pattern>/CategoryServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>CartServlet</servlet-name>
+	<url-pattern>/CartServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ManagerServlet</servlet-name>
+		<url-pattern>/ManagerServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>SaleOrderServlet</servlet-name>
+		<url-pattern>/SaleOrderServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdatePictureServlet</servlet-name>
+		<url-pattern>/UpdatePictureServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/ProductServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OrderServlet</servlet-name>
+		<url-pattern>/OrderServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+	</welcome-file-list>
+</web-app>
